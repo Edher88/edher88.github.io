@@ -1,3 +1,19 @@
 body {
+  font-family: 'Arial', serif;
   background-color: blue;
+  color: red;
+  text-align: right;
+  min-height: 1000px;
+  padding-top: 200px;
+}
+
+div{
+  border: 1px solid #ccc;
+
+}
+
+#navigation {
+  background-color: red;
+  color: white;
+
 }
