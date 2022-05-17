@@ -1,3 +1,10 @@
+.container-fluid {
+  background-color: rgba(246, 137, 61, 1);
+}
+.logonav {
+  background-color: white;
+
+}
 .topnav {
   position: relative;
   background-color: white;
@@ -25,85 +32,113 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.container {
+img {
   position: relative;
-  text-align: center;
-  color: white;
+  max-width: 100%;
+  max-height: 100%;
 }
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.box{
+        position: relative;
+        display: inline-block; /* Make the width of box same as image */
+    }
+.box .explore {
+        position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        top: 60%; /* Adjust this value to move the positioned div up and down */
+        text-align: center;
+        width: 100%; /* Set the width of the positioned div */
 }
 h1 {
-  letter-spacing: .50px;
-  font-size: 100px;
+  position: relative;
+  font-size: 90px;
+  font-family: helvetica,sans-serif;
   font-weight: bold;
-  font-family: Helvetica,sans-serif;
-  line-height: 1.5;
+  color: white
 }
-.container .btn {
-  position: absolute;
-  top: 90%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  background-color: rgba(0, 174, 124, 1);
-  color: white;
-  font-size: 34px;
-  padding: 12px 24px;
+.button {
+  position: relative;
   border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  margin: 4px 2px;
   cursor: pointer;
-  border-radius: 5px;
+  background-color: rgba(0, 174, 124, 1);
+  font-family: helvetica,sans-serif;
+  letter-spacing: 5px;
   font-weight: bold;
-  font-family: Helvetica,sans-serif;
+}
+.hello {
+  background-color: white;
+  padding-bottom: 60px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 60px;
 }
 h2 {
-  color:rgba(246, 137, 61, 1);
-  font-weight: bold;
-  font-family: Helvetica,sans-serif;
-  font-size: 50px;
-  padding-top: 30px;empty-cells;
   text-align: center;
+  font-size: 50px;
+  font-family: Helvetica,sans-serif;
+  font-weight: bold;
+  color: rgba(246, 137, 61, 1);
 }
 p {
+  text-align: center;
+}
+h5 {
+  font-size: 90px;
+  font-family: helvetica,sans-serif;
+  font-weight: bold;
+  color: white
+}
+/* Container holding the image and the text */
+.container-map {
+  position: relative;
+
+}
+
+/* Bottom right text */
+.text-block {
+  position: absolute;
+  bottom: 250px;
+  right: 220px;
+  left: 220px;
+  top: 280px;
+  background-color: white;
   color: rgba(246, 137, 61, 1);
-font-size: 18px !important;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 50px;
+  padding-bottom: 10px;
+  text-align: center;
 }
-.container-links {
-  background: rgba(246, 137, 61, 1) !important;
+h4 {
+  font-size: 50px;
+  font-family: helvetica,sans-serif;
+  font-weight: bold;
+  color: rgba(246, 137, 61, 1);
 }
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
+p {
+  padding-left: 80px;
+  padding-right: 80px;
 }
-
-/* Create four equal columns that sits next to each other */
-.column {
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
+.col{
+  float: none;
+  color: white;
+  text-align: center;
+  padding-left:50px;
+  padding-right: 50px;
+  text-decoration: none;
+  font-size: 17px;
+  list-style-type: none;
 }
-
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
+.container {
+  background-color: rgba(246, 137, 61, 1);
+  padding-top: 100px;
 }
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .column {
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    flex: 100%;
-    max-width: 100%;
-  }
